@@ -54,7 +54,10 @@ dependencies:
   linkfy_text:
   flutter_story_presenter:
   flutter_phoenix:
-
+  comment_tree: ^0.3.0
+  comment_box: ^0.0.18
+  flutter_keyboard_visibility: ^6.0.0
+  like_button: ^2.0.5
 
 dev_dependencies:
   flutter_test:

@@ -38,6 +38,9 @@ class MyApp extends StatelessWidget {
                 canvasColor: Colors.transparent,
                 splashColor: Colors.transparent,
                 indicatorColor: AppColors.primaryColor,
+                bottomSheetTheme: BottomSheetThemeData(
+                  dragHandleColor: AppColors.primaryColor,
+                ),
                 progressIndicatorTheme: const ProgressIndicatorThemeData(color: AppColors.primaryColor),
                 scrollbarTheme: const ScrollbarThemeData().copyWith(thumbColor: MaterialStateProperty.all(Colors.transparent)),
                 highlightColor: Colors.transparent,

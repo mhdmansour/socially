@@ -26,10 +26,7 @@ class FlutterToastHelper {
           ),
           child: Row(
             children: [
-               SvgPicture.asset(
-                      AppVectors.rightCheck,
-                      color: AppColors.white,
-                    ),
+
               Expanded(
                   child: Padding(
                       padding: const EdgeInsets.only(left: 8, right: 8),
@@ -43,15 +40,7 @@ class FlutterToastHelper {
                         textAlign: TextAlign.start,
                         textDirection:TextDirection.ltr, //SharedData.shared.langType == LangType.arabic ? TextDirection.rtl : TextDirection.ltr,
                       ))),
-               InkWell(
-                      onTap: () {
-                        dismissAllToast();
-                      },
-                      child: SvgPicture.asset(
-                        AppVectors.cancel,
-                        color: AppColors.white,
-                      ),
-                    ),
+
             ],
           ),
         ),
@@ -83,10 +72,7 @@ class FlutterToastHelper {
           ),
           child: Row(
             children: [
-             SvgPicture.asset(
-                      AppVectors.cancel,
-                      color:  AppColors.white.withOpacity(0),
-                    ),
+
               Expanded(
                   child: Padding(
                       padding: const EdgeInsets.only(left: 8, right: 8),
@@ -101,15 +87,7 @@ class FlutterToastHelper {
                         textDirection: TextDirection.ltr, //SharedData.shared.langType == LangType.arabic ? TextDirection.rtl : TextDirection.ltr,
                       ))),
 
-                  InkWell(
-                      onTap: () {
-                        dismissAllToast();
-                      },
-                      child: SvgPicture.asset(
-                        AppVectors.cancel,
-                        color: AppColors.white,
-                      ),
-                    ),
+
             ],
           ),
         ),

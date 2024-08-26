@@ -7,9 +7,6 @@ class HomeNotificationWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: Container(child: SvgPicture.asset(AppVectors.notification)),
-    );
+    return Container(child: SvgPicture.asset(AppVectors.notification));
   }
 }

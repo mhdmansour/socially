@@ -52,7 +52,7 @@ class _PostSliderWidgetState extends State<PostSliderWidget> {
                                   height: double.infinity,
                                   radius: (widget.radius ?? 0.0) > 1 ? widget.radius : 0,
                                   placeholderWidget: const ImageWaitingShimmer(height: double.infinity),
-                                  errorWidget: Image.asset(AppImages.logoPlaceholder, fit: BoxFit.cover),
+                                  errorWidget: Image.asset(AppImages.test1, fit: BoxFit.cover),
                                 ),
                               ),
                             );

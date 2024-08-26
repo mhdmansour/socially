@@ -8,6 +8,7 @@ import 'app/my_app.dart';
 import 'catalog/enums/easyLoading_helper.dart';
 import 'catalog/enums/env_config.dart';
 import 'common/config/app_config.dart';
+import 'common/local_data.dart';
 import 'out-buildings/development_tools_wrapper.dart';
 var environmentType = EnvironmentType.staging;
 
@@ -40,7 +41,7 @@ Future<void> initializeApp() async {
 
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
-
+  SharedData.shared.updateCommentsInfo(comments:LocaleData.comments);
 
 }
 
