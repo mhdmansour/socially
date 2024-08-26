@@ -3,6 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:socially_app/common/common.dart';
 import 'package:socially_app/common/config/app_constants/app_vectors.dart';
 
+import '../../../../../common/helper/bottom_sheet_helper.dart';
+import 'comment_ui_widget.dart';
+
 class PostBottomWidget extends StatelessWidget {
   int? numberOfComment;
   int? numberOfLikes;
@@ -31,7 +34,12 @@ class PostBottomWidget extends StatelessWidget {
                   const SizedBox(
                     width: 20,
                   ),
-                  SvgPicture.asset(AppVectors.comment),
+                  GestureDetector(
+                      onTap: () {
+                        print("sdf");
+                        BottomSheetHelper.showModalSheet(context, CommentUiWidget(),true);
+                      },
+                      child: SvgPicture.asset(AppVectors.comment)),
                   const SizedBox(
                     width: 7,
                   ),

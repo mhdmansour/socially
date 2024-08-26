@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:socially_app/common/common.dart';
 
 class SecondScreen extends StatefulWidget {
   static const routeName = 'SecondScreen';
@@ -11,8 +10,18 @@ class SecondScreen extends StatefulWidget {
 }
 
 class _SecondScreenState extends State<SecondScreen> {
+
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: AppColors.primaryColor, body: Container());
+    return Scaffold(
+          backgroundColor: Colors.grey[200],
+          appBar: AppBar(
+            title: const Text('Hi'),
+          ),
+          body: Container()
+
+    );
   }
+
 }
